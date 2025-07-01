@@ -16,7 +16,7 @@ test.describe('Login Scenario', () => {
         await login.closebrowser()
         console.log('After Each works for each test case')
     }));
-
+sdad
     test.afterAll(async () => {
         console.log('Done with test case');
         // ...
