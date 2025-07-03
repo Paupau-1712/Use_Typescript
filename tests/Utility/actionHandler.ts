@@ -17,10 +17,13 @@ export class actionHandler {
   {
     const locators = this.locator.getLocator(locatorPath);
 
-    switch (elementType.toLowerCase()) {
+    switch (elementType) {
 
         case 'URL':
             await this.page.goto(locatorValue);   // ✅ Open a generic URL
+            break;
+        case 'waitforURL':
+            await this.page.waitForURL;   // ✅ waitforURL to load
             break;
         case 'button':
             await locators.click();   // ✅ Click a generic button
