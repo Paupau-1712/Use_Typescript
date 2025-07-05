@@ -18,15 +18,17 @@ export class readTestCaseTemplate {
 
   
     for (const row of data) {
+      const step = row["step"]
       const propertyType = row["propertyType"];
       const locatorPath = row["LocatorPath"];
       const locatorValue = row["LocatorValue"];
 
       // Delegates the action handling
-      await this.performStep.performAction(propertyType, locatorPath, locatorValue);
+      await this.performStep.performAction(step,propertyType, locatorPath, locatorValue);
       console.log(`PropertyType: ${propertyType}, LocatorPath: ${locatorPath}, LocatorValue: ${locatorValue}`);
     }
   }
+
 }
 
 

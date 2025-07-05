@@ -12,9 +12,6 @@ export class propertyLocators {
     this.locatorPath = {
      searchBox: 'input[name="q"]',
       searchButton: 'input[name="btnK"]',
-      loginButton: '#login-btn',
-      usernameField: '#username',
-      passwordField: '#password', 
     }
     
   }
